@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+}
+.navbar {
+    position: absolute;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    margin-right: 600px;
+    gap: 3rem;
+}
+
+.finder {
+    box-sizing: border-box;
+    width: 50%;
+    background-color: whitesmoke;
+    padding: 20px 20px 20px 40px;
+    border-radius: 30px;
+}
+.finder-wrapper {
+    position: relative;
+    width: 100%;
+    margin-right: 20px
+}
+.text nav {
+    font-size: large;
+    font-weight: 200;
+}
+.iconoperfil {
+    border-radius: 20px;
+}
+
+
+.row {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.column {
+    flex: 20%;
+    margin-top: 100px;
+}
+.column img {
+    margin-top: 5px;
+    border-radius: 20px;
+}
+@media (max-width: 800px) {
+    .column {
+        flex: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
+
+.content figure{
+   position: relative;
+    height: 95%;
+    cursor: pointer;
+    width: 95%;
+    overflow: visible;
+    border-radius: 6px;
+    display: flex;
+}
+.content figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+    display: flex;
+}
+.content figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(231, 3, 3, 0.041);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: right;
+}
+.content figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+.capa > button{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    background-color: red;
+    border-radius: 60px;
+    padding: 8px 15px;
+    border: none;
+}
+.btns-compartir {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 0, 0.027);
+    border-radius: 100%;
+}
